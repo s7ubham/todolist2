@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="title">
+            <p>ToDo List</p>
+            <p id="add" onclick="toggleInput()">Add Item</p>
+        </div>
+        <div id="container">
+            <div class="list" id="pending" >
+                <div class="listTitle">Pending</div>
+            </div>
+            <div id="btns">
+                <p onclick="movePending()"> > </p>
+                <p onclick="moveCompleted()"> < </p>
+            </div>
+            <div class="list" id="completed">
+                <div class="listTitle">Completed</div>
+            </div>
+        </div>
+        <div id="inputContainer">
+            <input type="text" name="" id="task" placeholder="Enter the task">
+            <p onclick="addToPending()">Add</p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
